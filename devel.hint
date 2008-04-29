@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin
+requires: cygwin libexpat1
 external-source: expat
 sdesc: "Expat XML parser library (development)"
 ldesc: "This is Expat, a C library for parsing XML, written by James 
