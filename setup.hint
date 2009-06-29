@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin libexpat1 libexpat-devel
+requires: libexpat1 libexpat-devel
 sdesc: "Expat XML parser library (xmlwf, docs)"
 ldesc: "This is Expat, a C library for parsing XML, written by James 
 Clark. Expat is a stream-oriented XML parser.  This means that you 
