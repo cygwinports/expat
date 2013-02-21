@@ -1,0 +1,23 @@
+NAME="expat"
+VERSION=2.1.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Expat XML parser library"
+DESCRIPTION="This is Expat, a C library for parsing XML, written by James Clark.
+Expat is a stream-oriented XML parser.  This means that you register handlers
+with the parser before starting the parse.  These handlers are called when the
+parser discovers the associated structures in the document being parsed. A start
+tag is an example of the kind of structures for which you may register handlers."
+HOMEPAGE="http://expat.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+PKG_NAMES="${PN} lib${PN}1 lib${PN}-devel"
+expat_CONTENTS='usr/bin/*.exe usr/share/'
+libexpat1_CONTENTS="usr/bin/*-${abi}.dll"
+libexpat_devel_CONTENTS='usr/include/ usr/lib/'
+
+DIFF_EXCLUDES="expat_config.h.in"
+
+HTMLDOCS="doc/*.png doc/*.html doc/*.css"
+
+KEEP_LA_FILES="none"
