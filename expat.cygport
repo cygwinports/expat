@@ -1,6 +1,6 @@
 NAME="expat"
 VERSION=2.1.1
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="Expat XML parser library"
 DESCRIPTION="This is Expat, a C library for parsing XML, written by James Clark.
@@ -10,6 +10,7 @@ parser discovers the associated structures in the document being parsed. A start
 tag is an example of the kind of structures for which you may register handlers."
 HOMEPAGE="http://expat.sourceforge.net/"
 SRC_URI="mirror://sourceforge/expat/expat-${VERSION}.tar.bz2"
+PATCH_URI="https://bugzilla.redhat.com/attachment.cgi?id=1159904#/expat-CVE-2016-0718.patch"
 
 PKG_NAMES="expat libexpat1 libexpat-devel"
 expat_CONTENTS='usr/bin/*.exe usr/share/'
