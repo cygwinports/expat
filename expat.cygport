@@ -1,6 +1,6 @@
 NAME="expat"
 VERSION=2.1.0
-RELEASE=1
+RELEASE=3
 CATEGORY="Libs"
 SUMMARY="Expat XML parser library"
 DESCRIPTION="This is Expat, a C library for parsing XML, written by James Clark.
@@ -14,6 +14,7 @@ SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 PKG_NAMES="${PN} lib${PN}1 lib${PN}-devel"
 expat_CONTENTS='usr/bin/*.exe usr/share/'
 libexpat1_CONTENTS="usr/bin/cygexpat-1.dll"
+libexpat_devel_OBSOLETES="libexpat1-devel"
 libexpat_devel_CONTENTS='usr/include/ usr/lib/'
 
 DIFF_EXCLUDES="expat_config.h.in"
